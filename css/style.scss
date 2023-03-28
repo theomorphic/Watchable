@@ -1,0 +1,108 @@
+@font-face {
+	font-family: Pufony;
+	src: url(../files/Pufony-1.otf);
+}
+
+
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+    }
+
+body{
+	background-color: #f2aba6;
+	text-align: center;
+	min-height: 100vh;
+	line-height: 1;
+	font-family: Pufony;
+
+	background: #B79891;  
+	background: -webkit-linear-gradient(to bottom, #94716B, #B79891);
+	background: linear-gradient(to bottom, #94716B, #B79891);
+
+
+}
+
+.container{
+	max-width: 750px;
+	margin: auto;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+
+	.bio{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1%;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		margin: 0.5rem;
+		margin-bottom: 1rem;
+
+
+		.pfp{
+			width: 10rem;
+			height: 10rem;
+			margin-right: 0.5rem;
+		}
+
+	
+		h1{
+			font-size: 3.3rem;
+		}
+
+	}
+
+	.links{
+
+		h2{
+			font-size: 2.5rem;
+		}
+
+		a{
+			text-decoration: none;
+			color: #000;
+
+		}
+
+		img{
+			width: 4rem;
+			border-radius: 30%;
+			margin-right: 1rem;
+
+		}
+
+		.social{
+			padding: 0.8rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			border: black solid 3px;
+			margin: 1rem;
+
+			.link{
+				padding: 1rem;
+				border-radius: 1%;
+				margin-left: 1.2rem;
+			}
+		}
+
+		.social:hover{
+			h2{
+				font-size: 3rem;
+				transition: all 0.3s ease;
+			}
+		}
+
+		
+	}
+
+	
+}
+
+	
+	
+
+	
