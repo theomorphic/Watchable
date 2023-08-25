@@ -1,1 +1,1 @@
-https://theomorphic.github.io/watchable
+https://theomorphic.github.io/Watchable
