@@ -13,7 +13,6 @@ $color: #000000;
     }
 
 body{
-	// background-color: #f2aba6;
 	text-align: center;
 	min-height: 100vh;
 	line-height: 1;
@@ -21,9 +20,7 @@ body{
 
 	background: linear-gradient(90deg, rgb(17, 19, 172) 0%, rgb(93, 136, 255)35%, rgb(121, 190, 255)100%);
 
-	// background: #B79891;  
-	// background: -webkit-linear-gradient(to bottom, #94716B, #B79891);
-	// background: linear-gradient(to bottom, #94716B, #B79891);
+	user-select: none;
 
 
 }
@@ -142,8 +139,11 @@ body{
 
 	.bio{
 		display: flex;
+
 		justify-content: center;
 		align-items: center;
+
+
 		border-radius: 1%;
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
