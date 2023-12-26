@@ -28,7 +28,7 @@ body {
 .container .orange-wrapper {
   position: relative;
 }
-.container .orange-wrapper .orange-button {
+.container .orange-wrapper .wrapper-for-img {
   position: absolute;
   right: 20px;
   top: -70px;
