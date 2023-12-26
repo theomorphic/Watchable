@@ -25,12 +25,28 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.container .orange-wrapper {
+  position: relative;
+}
+.container .orange-wrapper .orange-button {
+  position: absolute;
+  right: 20px;
+  top: -70px;
+  cursor: pointer;
+}
 .container .box div {
   position: absolute;
   width: 4rem;
   height: 60px;
-  border: 6px solid rgba(255, 255, 255, 0.8);
   border-radius: 30%;
+}
+.container .box img {
+  top: 76%;
+  left: 12%;
+  animation: animate 10s linear infinite;
+}
+.container .box1, .container .box2, .container .box3, .container .box4, .container .box5, .container .box6, .container .box7, .container .box8, .container .box9, .container .box10 {
+  border: 6px solid rgba(255, 255, 255, 0.8);
 }
 .container .box div:nth-child(1) {
   top: 16%;
@@ -54,7 +70,7 @@ body {
 }
 .container .box div:nth-child(5) {
   top: 17%;
-  left: 74%;
+  left: 54%;
   animation: animate 11s linear infinite;
 }
 .container .box div:nth-child(6) {
@@ -69,7 +85,7 @@ body {
 }
 .container .box div:nth-child(8) {
   top: 3%;
-  left: 87%;
+  left: 67%;
   animation: animate 7s linear infinite;
 }
 .container .box div:nth-child(9) {

@@ -36,17 +36,49 @@ body{
 	// height: 100%;
 	// overflow: hidden;
 
+	.orange-wrapper{
+
+		position: relative;
+		
+		.orange-button{
+				position: absolute;
+				right: 20px;
+				top: -70px;
+				cursor: pointer;
+			}
+
+	}
+
+
 
 	.box div{
 
 		position: absolute;
 		width: 4rem;
 		height: 60px;
-		border: 6px solid rgba(255,255,255,0.8);
-
+		// border: 6px solid rgba(255,255,255,0.8);
 		border-radius: 30%;
 		
 	}
+
+
+	.box img{
+
+		top: 76%;
+		left: 12%;
+		animation: animate 10s linear infinite;
+	}
+
+	.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10 {
+
+		border: 6px solid rgba(255,255,255,0.8);
+	}
+
+
+
+
+
+
 
 	.box div:nth-child(1){
 
@@ -80,7 +112,7 @@ body{
 	.box div:nth-child(5){
 
 		top: 17%;
-		left: 74%;
+		left: 54%;
 		animation: animate 11s linear infinite;
 	}
 
@@ -102,7 +134,7 @@ body{
 	.box div:nth-child(8){
 
 		top: 3%;
-		left: 87%;
+		left: 67%;
 		animation: animate 7s linear infinite;
 	}
 
@@ -119,6 +151,90 @@ body{
 		left: 34%;
 		animation: animate 16s linear infinite;
 	}
+
+
+	// .active_orange div{
+
+	// 	position: absolute;
+	// 	width: 4rem;
+	// 	height: 60px;
+	// 	border: none;
+	// 	background-image: url(../img/orange-small.png);
+	// }
+	
+	
+	// .active_orange div:nth-child(1){
+	
+	// top: 16%;
+	// left: 12%;
+	// animation: animate 10s linear infinite;
+	// }
+	
+	// .active_orange div:nth-child(2){
+	
+	// top: 70%;
+	// left: 56%;
+	// animation: animate 7s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(3){
+	
+	// top: 89%;
+	// left: 11%;
+	// animation: animate 6s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(4){
+	
+	// top: 62%;
+	// left: 4%;
+	// animation: animate 9s linear infinite;
+	
+	// }
+	
+	// .active_orange:nth-child(5){
+	
+	// top: 17%;
+	// left: 74%;
+	// animation: animate 11s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(6){
+	
+	// top: 59%;
+	// left: 82%;
+	// animation: animate 15s linear infinite;
+	
+	// }
+	
+	// .active_orange:nth-child(7){
+	
+	// bottom: 1%;
+	// left: 83%;
+	// animation: animate 12s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(8){
+	
+	// top: 3%;
+	// left: 87%;
+	// animation: animate 7s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(9){
+	
+	// top: 100%;
+	// left: 69%;
+	// animation: animate 17s linear infinite;
+	// }
+	
+	// .active_orange:nth-child(10){
+	
+	// bottom: 1%;
+	// left: 34%;
+	// animation: animate 16s linear infinite;
+	// }
+	
 
 
 
@@ -214,10 +330,14 @@ body{
 		
 	}
 
-	
-}
+
+
+
+
 
 	
 	
+}
+
 
 	
