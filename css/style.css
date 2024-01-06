@@ -158,21 +158,29 @@ body {
 .container .bio {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
   border-radius: 1%;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin: 0.5rem;
   margin-bottom: 1rem;
 }
-.container .bio .pfp {
+.container .bio .pfp, .container .bio .basket_img {
   width: 30%;
   height: 30%;
   margin-right: 0.5rem;
 }
+.container .bio .basket_img {
+  position: absolute;
+  bottom: -19px;
+  right: 40px;
+  height: 120px;
+}
 .container .bio h1 {
+  position: relative;
   font-size: 3.3rem;
   color: #000000;
+  top: 20px;
 }
 .container .links h2 {
   font-size: 2.5rem;
@@ -197,11 +205,6 @@ body {
   margin: 1rem;
   background-color: rgba(122, 157, 253, 0.171);
   z-index: 99;
-}
-.container .links .social .link {
-  padding: 1rem;
-  border-radius: 1%;
-  margin-left: 1.2rem;
 }
 .container .links .social:hover h2 {
   font-size: 3rem;

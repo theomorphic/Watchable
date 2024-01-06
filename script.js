@@ -1,4 +1,4 @@
-const body = document.querySelector('body');
+
 const btn = document.getElementById('orange_btn');
 
 const box1 = document.getElementById('box1');
@@ -25,4 +25,45 @@ btn.onclick = function (){
     box9.classList.toggle('active');
     box10.classList.toggle('active');
 
+    if(localStorage.getItem("theme") == "oranges"){
+		localStorage.setItem("theme", "bubbles");
+	}
+	else{
+		localStorage.setItem("theme", "oranges");
+
+	}
+
 }
+
+if(localStorage.getItem("theme") == "oranges"){
+	box1.classList.remove("active");
+	box2.classList.remove("active");
+	box3.classList.remove("active");
+	box4.classList.remove("active");
+	box5.classList.remove("active");
+	box6.classList.remove("active");
+	box7.classList.remove("active");
+	box8.classList.remove("active");
+	box9.classList.remove("active");
+	box10.classList.remove("active");
+
+}
+else if(localStorage.getItem("theme") == "bubbles"){
+	box1.classList.add("active");
+	box2.classList.add("active");
+	box3.classList.add("active");
+	box4.classList.add("active");
+	box5.classList.add("active");
+	box6.classList.add("active");
+	box7.classList.add("active");
+	box8.classList.add("active");
+	box9.classList.add("active");
+	box10.classList.add("active");
+
+}
+else{
+	localStorage.setItem("theme", "oranges");
+}
+
+
+const dragItem = document.querySelectorAll('.img_orange');

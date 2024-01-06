@@ -221,7 +221,8 @@ body{
 		display: flex;
 
 		justify-content: center;
-		align-items: center;
+		// align-items: center;
+		position: relative;
 
 
 		border-radius: 1%;
@@ -231,23 +232,32 @@ body{
 		margin-bottom: 1rem;
 
 
-		.pfp{
+		.pfp,.basket_img{
 			width: 30%;
 			height: 30%;
 			margin-right: 0.5rem;
 			
 		}
 
+		.basket_img{
+			position: absolute;
+			bottom: -19px;
+			right: 40px;
+			height: 120px
+			
+		}
+
 	
 		h1{
+			position: relative;
 			font-size: 3.3rem;
 			color: $color;
+			top: 20px;
 		}
 
 	}
 
 	.links{
-		
 
 		h2{
 			font-size: 2.5rem;
@@ -278,12 +288,8 @@ body{
 			background-color:rgba(122, 157, 253, 0.171) ;
 			z-index: 99;
 
-			.link{
-				padding: 1rem;
-				border-radius: 1%;
-				margin-left: 1.2rem;
-			}
 		}
+
 
 		.social:hover{
 			h2{
@@ -291,7 +297,6 @@ body{
 				transition: all 0.3s ease;
 			}
 		}
-
 		
 	}
 
