@@ -66,4 +66,3 @@ else{
 }
 
 
-const dragItem = document.querySelectorAll('.img_orange');
