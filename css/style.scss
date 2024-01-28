@@ -264,6 +264,10 @@ body{
 			color: $color;
 		}
 
+		.banned{
+			text-decoration: line-through;
+		}
+
 		a{
 			text-decoration: none;
 			color: $color;
