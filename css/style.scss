@@ -1,9 +1,11 @@
+
 @font-face {
-	font-family: Pufony;
-	src: url(../files/Pufony-1.otf);
+	font-family: CustomFont;
+	src: url(../files/Paifon\ 1.otf);
 }
 
-$color: #000000;
+$color: #000000dc;
+
 
 
 
@@ -17,12 +19,17 @@ body{
 	text-align: center;
 	min-height: 100vh;
 	line-height: 1;
-	font-family: Pufony;
+	font-family: CustomFont;
+
 
 	background: linear-gradient(90deg, rgb(17, 19, 172) 0%, rgb(93, 136, 255)35%, rgb(121, 190, 255)100%);
 
 	user-select: none;
 	overflow-x: hidden;
+
+	background-image: url("../img/bg.webp");
+	background-size: cover;
+	background-position: center;
 
 
 
@@ -90,8 +97,8 @@ body{
 
 	.box3{
 
-		top: 89%;
-		left: 11%;
+		top: 69%;
+		left: 21%;
 		animation: animate 6s linear infinite;
 
 		img{
@@ -115,7 +122,7 @@ body{
 
 	.box5{
 
-		top: 17%;
+		top: 27%;
 		left: 54%;
 		animation: animate 11s linear infinite;
 
@@ -140,8 +147,8 @@ body{
 
 	.box7{
 
-		bottom: 1%;
-		left: 83%;
+		bottom: 35%;
+		left: 89%;
 		animation: animate 12s linear infinite;
 
 		img{
@@ -176,7 +183,7 @@ body{
 	
 	.box10{
 
-		bottom: 1%;
+		bottom: 36%;
 		left: 34%;
 		animation: animate 16s linear infinite;
 
@@ -210,7 +217,7 @@ body{
 		}
 
 		100%{
-			transform: scale(1.3) translateY(-90px) rotate(360deg);
+			transform: scale(1) translateY(-90px) rotate(360deg);
 			
 			opacity: 0.2;
 		}
@@ -288,8 +295,10 @@ body{
 			justify-content: center;
 			align-items: center;
 			border: black solid 3px;
+			border: 3px solid  #000000b0;
+			border-radius: 2%;
 			margin: 1rem;
-			background-color:rgba(122, 157, 253, 0.171) ;
+			background-color:rgba(224, 229, 241, 0.274);
 			z-index: 99;
 
 		}
@@ -297,8 +306,37 @@ body{
 
 		.social:hover{
 			h2{
-				font-size: 3rem;
 				transition: all 0.3s ease;
+				transform: scale(1.1);
+			}
+		}
+
+		.social2{
+			padding: 0.8rem;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin: 1rem;
+			z-index: 99;
+
+			border: none;
+			box-shadow: none;
+			
+			img{
+				width: 5rem;
+				transition: .3s ease all;
+				border: 5px solid  #ffffff85;
+			}
+
+			.no-border{
+				border: none;
+				width: 6rem;
+
+			}
+
+			img:hover{
+				transform: scale(1.1);
 			}
 		}
 		
@@ -307,3 +345,71 @@ body{
 	
 }
 
+@media(max-width:700px){
+	.container{
+		.bio{
+			justify-content:start;
+
+			h1{
+				display: none;
+
+			}
+
+			.pfp{
+				margin-left: 20vw;
+				width: 33%;
+				height: 33%;
+			}
+		}
+
+
+		.links{
+			h2{
+			font-size: 2.2rem;
+
+			}
+			.social2{
+			
+				img{
+					width: 3.2rem;
+				}
+
+				.no-border{
+					width: 4rem;
+				}
+			}
+		}
+	}
+}	
+
+
+@media(max-width:500px){
+	.container{
+		.links{
+			.social2{
+			
+				img{
+					width: 3.2rem;
+				}
+			}
+		}
+	}
+}	
+
+
+@media(max-width:370px){
+	.container{
+		
+		.links{
+			.social2{
+			
+				img{
+					width: 2.5rem;
+				}
+
+			}
+		}
+	}
+}
+
+	
